@@ -1,6 +1,6 @@
 package IC03A.QUESTION1;
 
-public class CallingCard
+public class CallingCard extends Card
 {
     private String cardNumber;
     private String pin;
@@ -11,9 +11,9 @@ public class CallingCard
         this.cardNumber = cardNumber;
         this.pin = pin;
     }
-   
     
-        
-
+    
+    
+    
     
 }

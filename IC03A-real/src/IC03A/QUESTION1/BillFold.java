@@ -6,6 +6,11 @@ public class BillFold
     private Card card1;
     private Card card2;
     
+    
+    public BillFold()
+    {
+        super();
+    }
     public BillFold(Card card1, Card card2)
     {
         super();

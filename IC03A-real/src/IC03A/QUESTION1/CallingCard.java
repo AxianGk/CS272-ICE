@@ -22,7 +22,21 @@ public class CallingCard extends Card
     	return "Calling" + super.toString() + " [number=" + cardNumber + ",pin=" + pin;
     }
     
-    
+    public String equals(String n1, String n2, String cardNumber1, String cardNumber2, String pin1, String pin2)
+    {
+ 	   String result = "[" + n1 + " and " + n2 + "are different]";
+ 	   if(n1 == n2)
+ 	   {
+ 		   if(cardNumber1 == cardNumber2)
+ 		   {
+ 			   if(pin1 == pin2)
+ 			   {
+ 				  result = "[" + n1 + " and " + n2 + "are the same]";
+ 			   }
+ 		   }
+ 	   }
+ 	   return result;
+    }
     
     
 }

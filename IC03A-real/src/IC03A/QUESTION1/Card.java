@@ -47,13 +47,11 @@ public class Card
    
    public String equals(String n1, String n2)
    {
+	   String result = "[" + n1 + " and " + n2 + "are different]";
 	   if(n1 == n2)
 	   {
-		   return "[" + n1 + " and " + n2 + "are the same]";
+		   result = "[" + n1 + " and " + n2 + "are the same]";
 	   }
-	   else
-	   {
-		   return "[" + n1 + " and " + n2 + "are different]";
-	   }
+	   return result;
    }
 }

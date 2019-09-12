@@ -32,6 +32,18 @@ public class Card
 
    public String format()
    {
-      return "Card holder: " + name;
+      return "[Name=" + name + "]";
+   }
+   
+   public String equals(String n1, String n2)
+   {
+	   if(n1 == n2)
+	   {
+		   return "[" + n1 + " and " + n2 + "are the same]";
+	   }
+	   else
+	   {
+		   return "[" + n1 + " and " + n2 + "are different]";
+	   }
    }
 }

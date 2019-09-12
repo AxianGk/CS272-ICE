@@ -12,6 +12,15 @@ public class CallingCard extends Card
         this.pin = pin;
     }
     
+    public String format()
+    {
+       return super.format() + "Number: " + cardNumber + ", Pin: " + pin;
+    }
+    
+    public String toString()
+    {
+    	return "Calling" + super.toString() + " [number=" + cardNumber + ",pin=" + pin;
+    }
     
     
     

@@ -1,5 +1,8 @@
 package IC03A.QUESTION1;
 
+//import java.util.GregorianCalendar;
+//import java.util.Calendar;
+
 public class DriverLicense extends Card
 {
 
@@ -13,7 +16,13 @@ public class DriverLicense extends Card
      
      public String format()
      {
-         return super.format() + "Exp year: " + expYear;
+         return super.format() + "Exp year: " + expYear + "]";
      }
+     
+     public String toString()
+     {
+    	 return "DriverLicense" + super.toString() + " [expYear=" + expYear + "]";
+     }
+     
 
 }

@@ -12,21 +12,25 @@ public class IDCard extends Card
         
         public String format()
         {
-            return super.format() + "[ID Number=" + idNumber + "]";
+            return super.format() + "ID Number: " + idNumber;
+        }
+        
+        public String toString()
+        {
+        	return "ID" + super.toString() + " [idnumber=" + idNumber + "]"; 
         }
         
         public String equals(String n1, String n2, String id1, String id2)
         {
-        	super(n1);
+        	String result = "[" + n1 + " and " + n2 + "are different]";
      	    if(n1.equals(n2))
      	    {
      		   if(id1 == id2)
-     		   return "[" + n1 + " and " + n2 + "are the same]";
+     		   {
+     			   result = "[" + n1 + " and " + n2 + "are the same]";
+     		   }
      	    }
-     	    else
-     	    {
-     		   return "[" + n1 + " and " + n2 + "are different]";
-     	    }
+     	    return result;
         }
 
 }

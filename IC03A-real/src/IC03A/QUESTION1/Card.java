@@ -6,6 +6,9 @@ package IC03A.QUESTION1;
  *
  */
 
+import java.util.GregorianCalendar;
+import java.util.Calendar;
+
 public class Card
 {
    private String name;
@@ -27,12 +30,19 @@ public class Card
 
    public boolean isExpired()
    {
+	  GregorianCalendar calendar = new GregorianCalendar();
+	  calendar.get(Calendar.YEAR);
       return false;
    }
 
    public String format()
    {
-      return "[Name=" + name + "]";
+      return "Name: " + name;
+   }
+   
+   public String toString()
+   {
+	   return "Card[name=" + name + "]";
    }
    
    public String equals(String n1, String n2)

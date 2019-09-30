@@ -19,7 +19,7 @@ import java.util.Scanner;
 public class FileAnalyzer
 {
     // TODO: You must fill these in correctly to get credit
-    public static final String STUDENT = "Put your login ID here";
+    public static final String STUDENT = "xzhao4";
     public static final String ASSIGNMENT = "IC05-A";
     
    /**

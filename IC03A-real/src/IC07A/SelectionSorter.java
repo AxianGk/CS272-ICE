@@ -6,6 +6,16 @@ package IC07A;
  */
 public class SelectionSorter
 {
+    public static long cCount = 0;
+    public static void resetcCount() {
+        cCount = 0;
+    }
+    public static void cCountInc() {
+        cCount++;
+    }
+    public static long getcCount() {
+        return cCount;
+    }
     /**
       Sorts an array, using selection sort.
       @param a the array to sort
@@ -31,6 +41,7 @@ public class SelectionSorter
         int minPos = from;
         for (int i = from + 1; i < a.length; i++)
         {
+            cCountInc();
             if (a[i] < a[minPos]) { minPos = i; }
         }
         return minPos;

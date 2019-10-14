@@ -41,13 +41,16 @@ public class JavaLibraryDemo
       
       // TODO: Use a Comparator to sort by country name; then print the result
       // You'll need to write a class that implements Comparator<Country>
-      
+      Collections.sort(countries, new CountryComparator());
+      System.out.println(countries);
       
       // TODO: Use lambda expressions to sort by length of country name; then print the result
-      
+      Collections.sort(countries, (u, v) -> u.getName().length() - v.getName().length());
+      System.out.println(countries);
       
       // TODO: Use lambda expressions to sort by country name; then print the result
-      
+      Collections.sort(countries, (u, v) -> u.getName().compareTo(v.getName()));
+      System.out.println(countries);
       
    }
 }

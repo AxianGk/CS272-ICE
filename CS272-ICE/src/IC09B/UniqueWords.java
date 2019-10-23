@@ -21,16 +21,18 @@ public class UniqueWords
         Scanner in = new Scanner(new File("alice30.txt"));
         
         /* TODO: Get the appropriate data structure ready... */
-        
+        Set<String> allwords = new HashSet<String>();
         
         while (in.hasNext())
         {
             /* TODO: Read and process the next word... */
-            
+            allwords.add(in.next());
         }
         in.close();
 
-        System.out.println( /* TODO: Print the answer... */ );
+        System.out.println( "The number of unique words in Alice in Wonderland: " );
+        System.out.println(allwords.size());
+        
     }
 }
 

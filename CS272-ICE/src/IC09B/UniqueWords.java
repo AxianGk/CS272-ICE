@@ -26,7 +26,7 @@ public class UniqueWords
         while (in.hasNext())
         {
             /* TODO: Read and process the next word... */
-            allwords.add(in.next());
+            allwords.add(in.next().toLowerCase());
         }
         in.close();
 
